@@ -18,6 +18,7 @@ Route::get('/productos', function () {
     return view('productos');
 });
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
