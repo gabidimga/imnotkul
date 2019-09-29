@@ -1,33 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-          <head>
-            <div class="container">
-
-                        <meta charset="utf-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                        <meta name="description" content="">
-                        <meta name="author" content="">
-
-                        <title>Im not Kul</title>
-
-                        <!-- Custom fonts for this theme -->
-                        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-                        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-                        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-                        <!-- Theme CSS -->
-                        <link href="css/freelancer.min.css" rel="stylesheet">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-          </head>
-          <br>
-          <br><br><br><br><br>
-
-          </blockquote>
-          <body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registrate') }}</div>
+                <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -96,6 +74,4 @@
         </div>
     </div>
 </div>
-          </body>
-
 @endsection

@@ -18,6 +18,16 @@ Route::get('/productos', function () {
     return view('productos');
 });
 
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+Route::get('/faqs', function () {
+    return view('faqs');
+});
+Route::get('/productos/{id}', function ($id) {
+    return view('productos');
+});
+
 
 Auth::routes();
 
