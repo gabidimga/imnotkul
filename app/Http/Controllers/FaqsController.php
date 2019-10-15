@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class FaqsController extends Controller
 {
-  public function faqs()  {
-    return view('faqs');
+  public function faqs()
+  {
+      return view('faqs');
   }
-    }
+}

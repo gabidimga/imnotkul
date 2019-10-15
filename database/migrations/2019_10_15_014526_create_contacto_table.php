@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Ecomerce extends Migration
+class CreateContactoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,13 @@ class Ecomerce extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('contacto', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+            $table->string("Nombre");
+              $table->string("Email");
+                $table->string("Mensaje");
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Ecomerce extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('contacto');
     }
 }

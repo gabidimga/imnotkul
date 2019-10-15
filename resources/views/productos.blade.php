@@ -1,19 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Productos</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="/css/app.css" rel="stylesheet">
+        <title>Im not kul</title>
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
 
-    </head>
-    <body>
+        <body>
 
       <br><br><br><br><br>
       <div class="album py-5 bg-light">
@@ -27,10 +26,11 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <a class="nav-link" href="{{ route('detalle') }}">{{ __('detalle') }}</a>
+                            <a class="nav-link" href="{{ route('productos') }}">{{ __('comprar') }}</a>
+
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$400</small>
                       </div>
                     </div>
                   </div>
@@ -42,10 +42,10 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                          <a class="nav-link" href="{{ route('detalle') }}">{{ __('detalle') }}</a>
+                      <a class="nav-link" href="{{ route('productos') }}">{{ __('comprar') }}</a>
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$400</small>
                       </div>
                     </div>
                   </div>
@@ -57,10 +57,10 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                          <a class="nav-link" href="{{ route('detalle') }}">{{ __('detalle') }}</a>
+                      <a class="nav-link" href="{{ route('productos') }}">{{ __('comprar') }}</a>
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$400</small>
                       </div>
                     </div>
                   </div>
@@ -73,10 +73,10 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                          <a class="nav-link" href="{{ route('detalle') }}">{{ __('detalle') }}</a>
+                      <a class="nav-link" href="{{ route('productos') }}">{{ __('comprar') }}</a>
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$500</small>
                       </div>
                     </div>
                   </div>
@@ -88,10 +88,10 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                          <a class="nav-link" href="{{ route('detalle') }}">{{ __('detalle') }}</a>
+                      <a class="nav-link" href="{{ route('productos') }}">{{ __('comprar') }}</a>
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$500</small>
                       </div>
                     </div>
                   </div>
@@ -106,7 +106,7 @@
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
-                        <small class="text-muted">9 mins</small>
+                        <small class="text-muted">$500</small>
                       </div>
                     </div>
                   </div>

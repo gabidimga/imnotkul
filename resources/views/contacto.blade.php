@@ -14,7 +14,7 @@
     </head>
 
 <body>
-  <br><br><br>
+  <br><br><br><br>
   <div class="contacto">
     <h1 align="center">Escribinos</h1>
   </div>
@@ -24,21 +24,21 @@
               <div class="card">
 
                   <div class="card-body">
-  <form>
+                  <form>
+
     <div>
       <label for="exampleInputEmail1">Nombre</label>
-      <input type="text" class="form-control"
+      <input type="text" class="form-control"value = "Nombre"
     </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Email">
 
   </div>
   <div class="form-group">
       <label for="exampleFormControlTextarea1">Mensaje</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" value= "Mensaje"></textarea>
     </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+  <a class="nav-link" href="{{ route('gracias') }}">{{ __('Enviar') }}</a></form>
 </body>
 </html>
